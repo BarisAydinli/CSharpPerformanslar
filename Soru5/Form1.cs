@@ -12,6 +12,9 @@ namespace Soru5CumleUzunluguBulmaProgrami
 {
     public partial class Form1 : Form
     {
+
+        //Tamamlandı.
+
         public Form1()
         {
             InitializeComponent();

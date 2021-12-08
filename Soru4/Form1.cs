@@ -13,6 +13,8 @@ namespace Soru4ButonHareketEttirmeProgrami
     public partial class Form1 : Form
     {
 
+        //Tamamlandı.
+
         public Form1()
         {
             InitializeComponent();

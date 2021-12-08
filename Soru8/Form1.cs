@@ -12,6 +12,9 @@ namespace Soru8
 {
     public partial class Form1 : Form
     {
+
+        //Tamamlandı.
+
         public Form1()
         {
             InitializeComponent();
@@ -21,10 +24,10 @@ namespace Soru8
         {
             if (e.KeyCode == Keys.Enter)
             {
+                lstSonuclar.Items.Clear();
 
                 bool sayilarKaresiCarpilacakMi = false;
                 bool sayilarCaprilicakMi = false;
-                bool sayilarToplanacakMi = false;
                 
 
                 int sayiBir = Convert.ToInt32(txtSayiBir.Text);
@@ -51,12 +54,7 @@ namespace Soru8
                         sayilarCaprilicakMi = true;
                         sayilarinCarpimi++;
                         break;
-                    }
-                    else
-                    {
-                        sayilarToplanacakMi = true;
-                        break;
-                    }
+                    }                   
                 }
 
                 for (int i = 0; i < sayilar.Length; i++)
@@ -64,12 +62,13 @@ namespace Soru8
                     if (sayilarKaresiCarpilacakMi == true) sayilarinKaresiCarpimi *= Math.Pow(sayilar[i], 2);
                     else if (sayilarCaprilicakMi == true) sayilarinCarpimi *= sayilar[i];
                     else sayilarinToplami += sayilar[i];
-                }
+                }               
 
                 if (sayilarKaresiCarpilacakMi == true) lstSonuclar.Items.Add($"Sayiların Karelerinin Çarpımı : {sayilarinKaresiCarpimi}");
                 else if (sayilarCaprilicakMi == true) lstSonuclar.Items.Add($"Sayiların Çarpımı : {sayilarinCarpimi}");
                 else lstSonuclar.Items.Add($"Sayiların Toplamı : {sayilarinToplami}");
 
+                
             }
         }
     }

@@ -17,10 +17,7 @@ namespace Soru11TavsanSayisiBulmaProgrami
             InitializeComponent();
         }
 
-        private void Form1_KeyDown(object sender, KeyEventArgs e)
-<<<<<<< HEAD
-        {           
-=======
+        private void Form1_KeyDown(object sender, KeyEventArgs e)               
         {
             decimal ay = nudAy.Value;
             int tavsanSayisi = 1;
@@ -38,8 +35,6 @@ namespace Soru11TavsanSayisiBulmaProgrami
                 }
                 MessageBox.Show(tavsanSayisi.ToString());
             }
->>>>>>> 0b7fe0f8b62e5a3903b7d0a2bf13fcd6c254869f
-            
         }
     }
 }

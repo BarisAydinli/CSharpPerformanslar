@@ -32,6 +32,8 @@
             this.txtGirdi = new System.Windows.Forms.TextBox();
             this.lstSonuclar = new System.Windows.Forms.ListBox();
             this.label3 = new System.Windows.Forms.Label();
+            this.rdbSayiDahil = new System.Windows.Forms.RadioButton();
+            this.rdbSayiDahilDegil = new System.Windows.Forms.RadioButton();
             this.SuspendLayout();
             // 
             // label1
@@ -54,9 +56,9 @@
             // 
             this.lstSonuclar.FormattingEnabled = true;
             this.lstSonuclar.ItemHeight = 19;
-            this.lstSonuclar.Location = new System.Drawing.Point(265, 9);
+            this.lstSonuclar.Location = new System.Drawing.Point(265, 12);
             this.lstSonuclar.Name = "lstSonuclar";
-            this.lstSonuclar.Size = new System.Drawing.Size(154, 156);
+            this.lstSonuclar.Size = new System.Drawing.Size(413, 99);
             this.lstSonuclar.TabIndex = 2;
             // 
             // label3
@@ -70,12 +72,36 @@
             this.label3.TabIndex = 10;
             this.label3.Text = "Uygulama Enter İle Çalışıyor.";
             // 
+            // rdbSayiDahil
+            // 
+            this.rdbSayiDahil.AutoSize = true;
+            this.rdbSayiDahil.Location = new System.Drawing.Point(12, 41);
+            this.rdbSayiDahil.Name = "rdbSayiDahil";
+            this.rdbSayiDahil.Size = new System.Drawing.Size(95, 23);
+            this.rdbSayiDahil.TabIndex = 13;
+            this.rdbSayiDahil.TabStop = true;
+            this.rdbSayiDahil.Text = "Sayı Dahil";
+            this.rdbSayiDahil.UseVisualStyleBackColor = true;
+            // 
+            // rdbSayiDahilDegil
+            // 
+            this.rdbSayiDahilDegil.AutoSize = true;
+            this.rdbSayiDahilDegil.Location = new System.Drawing.Point(109, 41);
+            this.rdbSayiDahilDegil.Name = "rdbSayiDahilDegil";
+            this.rdbSayiDahilDegil.Size = new System.Drawing.Size(134, 23);
+            this.rdbSayiDahilDegil.TabIndex = 14;
+            this.rdbSayiDahilDegil.TabStop = true;
+            this.rdbSayiDahilDegil.Text = "Sayı Dahil Değil";
+            this.rdbSayiDahilDegil.UseVisualStyleBackColor = true;
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 19F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.Gray;
-            this.ClientSize = new System.Drawing.Size(424, 171);
+            this.ClientSize = new System.Drawing.Size(705, 131);
+            this.Controls.Add(this.rdbSayiDahilDegil);
+            this.Controls.Add(this.rdbSayiDahil);
             this.Controls.Add(this.label3);
             this.Controls.Add(this.lstSonuclar);
             this.Controls.Add(this.txtGirdi);
@@ -97,6 +123,8 @@
         private System.Windows.Forms.TextBox txtGirdi;
         private System.Windows.Forms.ListBox lstSonuclar;
         private System.Windows.Forms.Label label3;
+        private System.Windows.Forms.RadioButton rdbSayiDahil;
+        private System.Windows.Forms.RadioButton rdbSayiDahilDegil;
     }
 }
 

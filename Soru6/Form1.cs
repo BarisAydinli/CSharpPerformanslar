@@ -12,6 +12,9 @@ namespace Soru6PalindromCumleOldugunuAnlamaProgrami
 {
     public partial class Form1 : Form
     {
+
+        //Tamamlandı.
+
         public Form1()
         {
             InitializeComponent();

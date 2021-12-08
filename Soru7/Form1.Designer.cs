@@ -28,7 +28,6 @@
         /// </summary>
         private void InitializeComponent()
         {
-<<<<<<< HEAD
             this.lblBinary1 = new System.Windows.Forms.Label();
             this.lblBinary2 = new System.Windows.Forms.Label();
             this.lblBinaryToplam = new System.Windows.Forms.Label();
@@ -211,7 +210,6 @@
             this.groupBox1.PerformLayout();
             this.ResumeLayout(false);
             this.PerformLayout();
-
         }
 
         #endregion
@@ -229,16 +227,8 @@
         private System.Windows.Forms.Label label11;
         private System.Windows.Forms.Label label12;
         private System.Windows.Forms.Label label13;
-        private System.Windows.Forms.GroupBox groupBox1;
-=======
-            this.components = new System.ComponentModel.Container();
-            this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(800, 450);
-            this.Text = "Form1";
-        }
-
-        #endregion
->>>>>>> 0b7fe0f8b62e5a3903b7d0a2bf13fcd6c254869f
+        private System.Windows.Forms.GroupBox groupBox1;           
+        
     }
 }
 

@@ -12,6 +12,9 @@ namespace Soru9SayiHesaplamaProgrami
 {
     public partial class Form1 : Form
     {
+
+        //Tamamlandı.
+
         public Form1()
         {
             InitializeComponent();
@@ -22,27 +25,39 @@ namespace Soru9SayiHesaplamaProgrami
             int sayac = 1;
                   
             long ciftSayilarinToplami = 0;
-            long uceBolunenlerinCarpımi = 1;
+            ulong uceBolunenlerinCarpımi = 1;
 
             double ikiVeUceBolunenlerinKaresi = 0;
             if (e.KeyCode == Keys.Enter)
             {
                 lstSonuclar.Items.Clear();
                 long girdi = Convert.ToInt64(txtGirdi.Text);
-
-                while (sayac <= girdi)
+                if (rdbSayiDahil.Checked == true)
                 {
+                    while (sayac <= girdi)
+                    {
 
-                    if (sayac % 2 == 0) ciftSayilarinToplami += sayac;
-                    if (sayac % 3 == 0) uceBolunenlerinCarpımi *= sayac;
-                    if (sayac % 2 == 0 && sayac % 3 == 0) ikiVeUceBolunenlerinKaresi += Math.Pow(sayac, 2);
-                    sayac++;
-
+                        if (sayac % 2 == 0) ciftSayilarinToplami += sayac;
+                        if (sayac % 3 == 0) uceBolunenlerinCarpımi *= ulong.Parse(sayac.ToString());
+                        if (sayac % 2 == 0 && sayac % 3 == 0) ikiVeUceBolunenlerinKaresi += Math.Pow(sayac, 2);
+                        sayac++;
+                    }
                 }
+                else if (rdbSayiDahilDegil.Checked == true)
+                {
+                    while (sayac <= girdi - 1)
+                    {
 
-                lstSonuclar.Items.Add(ciftSayilarinToplami);
-                lstSonuclar.Items.Add(uceBolunenlerinCarpımi);
-                lstSonuclar.Items.Add(ikiVeUceBolunenlerinKaresi);
+                        if (sayac % 2 == 0) ciftSayilarinToplami += sayac;
+                        if (sayac % 3 == 0) uceBolunenlerinCarpımi *= ulong.Parse(sayac.ToString());
+                        if (sayac % 2 == 0 && sayac % 3 == 0) ikiVeUceBolunenlerinKaresi += Math.Pow(sayac, 2);
+                        sayac++;
+                    }
+                }
+                
+                lstSonuclar.Items.Add($"Çift Sayıların Toplamı : {ciftSayilarinToplami}");
+                lstSonuclar.Items.Add($"Üçe Bölünenelerin Çarpımı : {uceBolunenlerinCarpımi}");
+                lstSonuclar.Items.Add($"Hem İkiye Hem Üçe Bölünenlerin Karelerinin Toplamı : {ikiVeUceBolunenlerinKaresi}");
 
             }
             

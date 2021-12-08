@@ -12,6 +12,9 @@ namespace Soru3SifreUygulaması
 {
     public partial class Form1 : Form
     {
+
+        //Tamamlandı.
+
         string sifre = "1234ABC";
         public Form1()
         {

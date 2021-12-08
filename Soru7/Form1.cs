@@ -12,7 +12,8 @@ namespace Soru7
 {
     public partial class Form1 : Form
     {
-<<<<<<< HEAD
+
+        //Tamamlandı.
 
         Random rdn = new Random();
 
@@ -22,14 +23,10 @@ namespace Soru7
 
         string binaryToplam = "";
 
-
-=======
->>>>>>> 0b7fe0f8b62e5a3903b7d0a2bf13fcd6c254869f
         public Form1()
         {
             InitializeComponent();
         }
-<<<<<<< HEAD
 
         private void BinaryToDecimal(string binary1, string binary2)
         {
@@ -134,7 +131,5 @@ namespace Soru7
                 lblBinaryToplam.Text = binaryToplam;
             }
         }
-=======
->>>>>>> 0b7fe0f8b62e5a3903b7d0a2bf13fcd6c254869f
     }
 }

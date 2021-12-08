@@ -12,11 +12,15 @@ namespace Soru10MukemmelSayiBulmaProgrami
 {
     public partial class Form1 : Form
     {
+
+        //Tamamlandı.
+
         public Form1()
         {
             InitializeComponent();          
         }
 
+        
         private void Form1_KeyDown(object sender, KeyEventArgs e)
         {
             int sonuc = 0;
