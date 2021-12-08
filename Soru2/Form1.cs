@@ -14,6 +14,10 @@ namespace Soru2
         {
             if (e.KeyCode == Keys.Enter)
             {
+<<<<<<< HEAD
+=======
+
+>>>>>>> 0b7fe0f8b62e5a3903b7d0a2bf13fcd6c254869f
                 string girdi = txtSayiGirdisi.Text.Trim();
                 string virgul = ",";
 
@@ -23,15 +27,24 @@ namespace Soru2
                 
                 int virgulUzunluk = 1;
                 int sayac = 0;
+<<<<<<< HEAD
                 int baslangic = 0;
+=======
+                int baslangıc = 0;
+>>>>>>> 0b7fe0f8b62e5a3903b7d0a2bf13fcd6c254869f
 
                 List<int> virgulYerleri = new List<int>();
 
                 while (sayac != -1)
                 {
                     virgulYerleri.Add(sayac);
+<<<<<<< HEAD
                     baslangic = virgulUzunluk + sayac;
                     sayac = girdi.IndexOf(virgul, baslangic);
+=======
+                    baslangıc = virgulUzunluk + sayac;
+                    sayac = girdi.IndexOf(virgul, baslangıc);
+>>>>>>> 0b7fe0f8b62e5a3903b7d0a2bf13fcd6c254869f
                 }
 
                 virgulYerleri.RemoveAt(0);
