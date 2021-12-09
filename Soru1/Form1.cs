@@ -58,7 +58,7 @@ namespace GirilenSayiyiHarflerleYazdırmaProgramı
                 }
                 else
                 {
-
+                    //25
                     for (int i = 0; i < sayilarinHarfKarsiligiOndalikSayilar.Length; i++)
                     {
                         if (Convert.ToInt32(girdiStr[0] - 49) == i)

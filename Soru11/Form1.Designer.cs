@@ -66,7 +66,7 @@
             this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 19F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.Gray;
-            this.ClientSize = new System.Drawing.Size(284, 93);
+            this.ClientSize = new System.Drawing.Size(258, 93);
             this.Controls.Add(this.label3);
             this.Controls.Add(this.nudAy);
             this.Controls.Add(this.label1);

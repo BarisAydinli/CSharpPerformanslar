@@ -17,23 +17,26 @@ namespace Soru11TavsanSayisiBulmaProgrami
             InitializeComponent();
         }
 
-        private void Form1_KeyDown(object sender, KeyEventArgs e)               
+        private void Form1_KeyDown(object sender, KeyEventArgs e)
         {
-            decimal ay = nudAy.Value;
-            int tavsanSayisi = 1;
-            int öncekiA = 0;
-            int sayac = 0;
+            int ay = Convert.ToInt32(nudAy.Value);
+
             if (e.KeyCode == Keys.Enter)
             {
+                int birOncekiGunTS = 0; int ikiOncekiGunTS = 0; int tavsanSayisi = 0; int sayac = 2;
+
+                //2 | 3 | 5 | 8 | 13 | 21
+                if (ay == 1) { MessageBox.Show($"{ay}. ayda {2} kadar tavşan vardır."); }           
+                if (ay == 2) {MessageBox.Show($"{ay}. ayda {3} kadar tavşan vardır."); }
+
                 while (ay > sayac)
                 {
-                    for (int i = 0; i < sayac; i++)
-                    {
+                    
 
-                    }
                     sayac++;
                 }
-                MessageBox.Show(tavsanSayisi.ToString());
+                if (ay == sayac) { MessageBox.Show($"{ay}. ayda {tavsanSayisi} kadar tavşan vardır."); }
+
             }
         }
     }

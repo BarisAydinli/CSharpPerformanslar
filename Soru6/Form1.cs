@@ -36,8 +36,7 @@ namespace Soru6PalindromCumleOldugunuAnlamaProgrami
             {               
                 if (cumle == tersCumle) MessageBox.Show("Palindrom Cümledir.");
                 else MessageBox.Show("Palindrom Cümle Değildir.");
-            }
-            
+            }       
         }
     }
 }

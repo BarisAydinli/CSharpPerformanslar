@@ -75,7 +75,7 @@
             this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 19F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.Gray;
-            this.ClientSize = new System.Drawing.Size(389, 111);
+            this.ClientSize = new System.Drawing.Size(390, 111);
             this.Controls.Add(this.lstMukemmelSayilar);
             this.Controls.Add(this.txtGirdi);
             this.Controls.Add(this.label3);
