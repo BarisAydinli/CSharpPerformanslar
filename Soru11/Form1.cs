@@ -19,25 +19,41 @@ namespace Soru11TavsanSayisiBulmaProgrami
 
         private void Form1_KeyDown(object sender, KeyEventArgs e)
         {
+            
             int ay = Convert.ToInt32(nudAy.Value);
+            int tavsanSayisi = 0; int birinciAyTavsanSayisi = 2; int ikinciAyTavsanSayisi = 3;
+
+            List<int> tavsanSayisiList = new List<int>();
+
+            tavsanSayisiList.Add(0);
+            tavsanSayisiList.Add(birinciAyTavsanSayisi);
+            tavsanSayisiList.Add(ikinciAyTavsanSayisi);
 
             if (e.KeyCode == Keys.Enter)
             {
-                int birOncekiGunTS = 0; int ikiOncekiGunTS = 0; int tavsanSayisi = 0; int sayac = 2;
-
-                //2 | 3 | 5 | 8 | 13 | 21
-                if (ay == 1) { MessageBox.Show($"{ay}. ayda {2} kadar tavşan vardır."); }           
-                if (ay == 2) {MessageBox.Show($"{ay}. ayda {3} kadar tavşan vardır."); }
-
-                while (ay > sayac)
+                //2,3,5,8,13,21,34,55
+                for (int i = 2; i <= ay; i++)
                 {
-                    
-
-                    sayac++;
+                    tavsanSayisi = birinciAyTavsanSayisi + ikinciAyTavsanSayisi;
+                    if (tavsanSayisi == birinciAyTavsanSayisi + ikinciAyTavsanSayisi)
+                    {
+                        tavsanSayisiList.Add(tavsanSayisi);                        
+                    }
+                    birinciAyTavsanSayisi = ikinciAyTavsanSayisi;
+                    ikinciAyTavsanSayisi = tavsanSayisi;
                 }
-                if (ay == sayac) { MessageBox.Show($"{ay}. ayda {tavsanSayisi} kadar tavşan vardır."); }
 
+                for (int i = 1; i <= ay+1; i++)
+                {
+                    if (i == ay)
+                    {
+                        MessageBox.Show($"{ay}. ayda {tavsanSayisiList[i].ToString()} kadar tavşan vardır.");
+                    }
+                }
             }
+
+            
         }
     }
 }
+
