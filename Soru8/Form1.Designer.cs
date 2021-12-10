@@ -63,7 +63,7 @@
             this.lstSonuclar.ItemHeight = 19;
             this.lstSonuclar.Location = new System.Drawing.Point(225, 9);
             this.lstSonuclar.Name = "lstSonuclar";
-            this.lstSonuclar.Size = new System.Drawing.Size(238, 175);
+            this.lstSonuclar.Size = new System.Drawing.Size(371, 175);
             this.lstSonuclar.TabIndex = 10;
             // 
             // txtSayiBir
@@ -92,7 +92,7 @@
             this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 19F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.Gray;
-            this.ClientSize = new System.Drawing.Size(475, 189);
+            this.ClientSize = new System.Drawing.Size(608, 189);
             this.Controls.Add(this.txtSayiUc);
             this.Controls.Add(this.txtSayiIki);
             this.Controls.Add(this.txtSayiBir);

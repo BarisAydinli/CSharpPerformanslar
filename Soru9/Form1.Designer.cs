@@ -58,7 +58,7 @@
             this.lstSonuclar.ItemHeight = 19;
             this.lstSonuclar.Location = new System.Drawing.Point(265, 12);
             this.lstSonuclar.Name = "lstSonuclar";
-            this.lstSonuclar.Size = new System.Drawing.Size(413, 99);
+            this.lstSonuclar.Size = new System.Drawing.Size(508, 99);
             this.lstSonuclar.TabIndex = 2;
             // 
             // label3
@@ -99,7 +99,7 @@
             this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 19F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.Gray;
-            this.ClientSize = new System.Drawing.Size(705, 131);
+            this.ClientSize = new System.Drawing.Size(785, 131);
             this.Controls.Add(this.rdbSayiDahilDegil);
             this.Controls.Add(this.rdbSayiDahil);
             this.Controls.Add(this.label3);
